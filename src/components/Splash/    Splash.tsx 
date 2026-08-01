@@ -1,0 +1,9 @@
+function Splash() {
+  return (
+    <section>
+      <h1>mayinyard</h1>
+    </section>
+  );
+}
+
+export default Splash;
