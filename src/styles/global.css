@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Pixel Impacted";
+  src: url("../assets/fonts/PixelImpacted-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -46,8 +53,17 @@ img {
 }
 
 .splash h1 {
-  color: var(--color-text);
-  font-size: 4rem;
+  color: #e3e3e3;
+
+font-family: "Pixel Impacted", monospace;
+
+  font-size: clamp(4rem, 8vw, 8rem);
+
   font-weight: 300;
-  letter-spacing: 0.15em;
+
+  letter-spacing: 0.18em;
+
+  animation: splashReveal 3s ease forwards;
+
+  
 }
