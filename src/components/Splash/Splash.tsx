@@ -1,6 +1,6 @@
 function Splash() {
   return (
-    <section>
+    <section className="splash">
       <h1>mayinyard</h1>
     </section>
   );
