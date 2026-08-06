@@ -16,6 +16,7 @@
     gap: 90px;
 }
 
+
 .hero-text h2 {
   font-size: 3rem;
   font-weight: 300;
@@ -23,14 +24,19 @@
   margin-bottom: 24px;
 }
 
-.hero-text p {
-  max-width: 420px;
+.hero-text h2 {
+  font-size: 3rem;
+  font-weight: 300;
 
-  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
 
-  line-height: 1.8;
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  color: var(--color-text-secondary);
+  margin-top: 35px;
 }
 
 .hero-image {

@@ -1,8 +1,8 @@
 function HeroButton() {
   return (
-    <button className="hero-button">
+    <a href="#archive" className="hero-button">
       Explore archive ↓
-    </button>
+    </a>
   );
 }
 

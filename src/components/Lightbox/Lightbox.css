@@ -1,0 +1,40 @@
+.lightbox {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, .95);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox-content img {
+  display: block;
+
+  max-width: 100%;
+  max-height: 80vh;
+
+  object-fit: contain;
+}
+
+.lightbox-info {
+  margin-top: 20px;
+
+  color: white;
+}
+
+.lightbox-info h2 {
+  font-weight: 300;
+}
+
+.lightbox-info p {
+  color: #8d8d8d;
+}

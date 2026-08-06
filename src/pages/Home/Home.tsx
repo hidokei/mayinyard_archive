@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import Splash from "../../components/Splash/Splash";
 import Hero from "../../components/Hero/Hero";
+import Archive from "../../components/Archive/Archive";
+import "../../data/photoLoader";
 
 function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -9,14 +11,19 @@ function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false);
-    }, 3000); // потом подберем время
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
 
+  if (showSplash) {
+    return <Splash />;
+  }
+
   return (
     <>
-      {showSplash ? <Splash /> : <Hero />}
+      <Hero />
+      <Archive />
     </>
   );
 }

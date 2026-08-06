@@ -1,0 +1,53 @@
+.archive {
+    padding: 140px 80px;
+}
+
+.archive-header {
+    margin-bottom: 80px;
+}
+
+.archive-header h2 {
+
+    font-size: 2.6rem;
+
+    font-weight: 300;
+
+    margin-bottom: 18px;
+}
+
+.archive-header p {
+
+    color: var(--color-text-secondary);
+
+    max-width: 420px;
+
+    line-height: 1.8;
+}
+
+.archive-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+}
+
+.archive-card {
+
+    cursor: pointer;
+}
+
+.archive-card img {
+  width: 100%;
+  height: 320px;
+
+  object-fit: cover;
+}
+
+.archive-card:hover img {
+
+    transform: scale(1.015);
+
+    opacity: .92;
+}
